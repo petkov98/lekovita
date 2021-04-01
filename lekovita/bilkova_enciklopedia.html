@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Лековита</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="E:/sites/lekovita/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript" src="./main.js"></script>
+
+	<script type="text/javascript">
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $(".header").addClass("scrolling");
+    } else {
+        $(".header").removeClass("scrolling");
+    }
+});
+        </script>
+</head>
+
+	<header class="header">
+
+	<div class="container" id="navbar">
+		<div class="containerinner">
+				<nav role="navigation">
+				  <div id="menuToggle">
+
+				    <input type="checkbox" />
+
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				    
+				   
+				    <ul id="menu">
+				      <a href="./index.html"><li>Начало</li></a>
+				      <a href="./bilkovi_smesi.html"><li>Билкови смеси</li></a>
+				      <a href="./bilkova_enciklopedia.html"><li>Билкова енциклопедия</li></a>
+				      <a href="./za_nas.html"><li>За нас</li></a>
+				      <a href="./blog.html"><li>Блог</li></a>
+				      <a href="./promocii.html"><li>Промоции</li></a>
+				      <a href="./za_vruzka.html"><li>За връзка</li></a>
+				      <div class="nap_menu">
+				      <p>„ЛЕКОВИТА ООД“,
+						ул. Света Троица 79,
+						Стара Загора 6000
+						lekovita@yahoo.com
+						+359 882 85 24 42</p>
+						</div>
+						<div class="menu_logo">
+							<a href="#">ЛЕКОВИТА</a>
+						</div>
+				    </ul>
+				  </div>
+				</nav>
+
+				<div class="lekovita_logo">
+					<a href="*">ЛЕКОВИТА</a>
+				</div>
+
+				<div class="cart_search">
+					<input  class="search" type="text" placeholder="Търси продукти...">
+					<i class="fa fa-shopping-cart" style="font-size:36px">(0)</i>
+				</div>
+		</div>
+	</div>
+</header>
+
+<body>
+	
+<section class="enciklopedia">
+
+	<div class="container">
+		<div class="enciklopedia_title">
+	<a href="./index.html" class="home_enciklopedia"><li>Начало</li></a>
+	<p>/ Билкова енциклопедия</p>
+		</div>
+		<div class="search_enciklopedia">
+			<input  class="search" type="text" placeholder="Търси...">
+			</div>
+			<div id="myBtnContainer">
+
+			  <button class="btn active" onclick="filterSelection('all')"> Всички</button>
+			  <button class="btn" onclick="filterSelection('А')"> А</button>
+			  <button class="btn" onclick="filterSelection('Б')"> Б</button>
+			  <button class="btn" onclick="filterSelection('В')"> В</button>
+			  <button class="btn" onclick="filterSelection('Г')"> Г</button>
+			  <button class="btn" onclick="filterSelection('Д')"> Д</button>
+			  <button class="btn" onclick="filterSelection('Е')"> Е</button>
+			  <button class="btn" onclick="filterSelection('Ж')"> Ж</button>
+			  <button class="btn" onclick="filterSelection('З')"> З</button>
+			  <button class="btn" onclick="filterSelection('И')"> И</button>
+			  <button class="btn" onclick="filterSelection('Й')"> Й</button>
+			  <button class="btn" onclick="filterSelection('К')"> К</button>
+			  <button class="btn" onclick="filterSelection('Л')"> Л</button>
+			  <button class="btn" onclick="filterSelection('М')"> М</button>
+			  <button class="btn" onclick="filterSelection('Н')"> Н</button>
+			  <button class="btn" onclick="filterSelection('О')"> О</button>
+			  <button class="btn" onclick="filterSelection('П')"> П</button>
+			  <button class="btn" onclick="filterSelection('Р')"> Р</button>
+			  <button class="btn" onclick="filterSelection('С')"> С</button>
+			  <button class="btn" onclick="filterSelection('Т')"> Т</button>
+			  <button class="btn" onclick="filterSelection('У')"> У</button>
+			  <button class="btn" onclick="filterSelection('Ф')"> Ф</button>
+			  <button class="btn" onclick="filterSelection('Х')"> Х</button>
+			  <button class="btn" onclick="filterSelection('Ц')"> Ц</button>
+			  <button class="btn" onclick="filterSelection('Ш')"> Ш</button>
+			  <button class="btn" onclick="filterSelection('Щ')"> Щ</button>
+			  <button class="btn" onclick="filterSelection('Ъ')"> Ъ</button>
+			  <button class="btn" onclick="filterSelection('Ю')"> Ю</button>
+			  <button class="btn" onclick="filterSelection('Я')"> Я</button>
+			</div>		
+
+			<div class="filters"> <!--container -->
+				<!--cars-->
+				
+				<div class="line">A</div>
+			  <div class="filterDiv А"><a href=""> АИР БЛАТЕН – Миризлив акорус (Acorus calamus L.)</a></div> <!--cars-->
+			   <div class="filterDiv А"><a href=""> АЙВАЖИВА – Винче, паче гнездо (Alkanna tinctoria)</a></div>
+			   <div class="filterDiv А"><a href=""> АЛОЕ – Столетник (Aloe arborescens Mill.)</a></div>
+			   <div class="filterDiv А"><a href=""> АНАСОН – Бедреница (Pimpinella anisum L.)</a></div>
+			   <div class="filterDiv А"><a href=""> АНГЕЛИКА – Лечебна пищялка ( Angelica archangelica L. )</a></div>
+			 
+			   <!--colors fruits -->
+			   <div class="line">Б</div>
+			  <div class="filterDiv Б"><a href="">БАБИНИ ЗЪБИ -Трабузан (Tribulus terrestris L.)</a></div>
+			  <div class="filterDiv Б"><a href="">БАБИЦА – Коча трева, мачо биле (Nepeta cataria L.)</a></div>
+			  <div class="filterDiv Б"><a href="">БАЛКАНСКА ПИЩЯЛКА – Ангелика (Angelica pancicii Vandas)</a></div>
+			  <div class="filterDiv Б"><a href="">БЕЛАДОНА – Лудо биле (Atropa belladonna L.)</a></div>
+				
+			  <div class="line">В</div>
+			  <div class="filterDiv В"><a href="">ВАЛЕРИАНА – Дилянка, коча билка, мача трева , милянка (Valeriana officinalis L.)</a></div>
+			  <div class="filterDiv В"><a href="">ВЕТРОГОН – Биволски трън (Eryngium campestre L.)</a></div>
+			  <div class="filterDiv В"><a href="">ВИШНА ДРЪЖКИ (Primuscerasus L.)</a></div>
+			  <div class="filterDiv В"><a href="">ВОДНО ПИПЕРИЧЕ – Маясълче, див пипер (Polygonum hidropiper L.)</a></div>
+			  <div class="filterDiv В"><a href="">ВОЛСКИ ЕЗИК – Биволски език (Phylitis scolopendrium L.)</a></div>
+
+			  <div class="line">Г</div>
+			  <div class="filterDiv Г"><a href="">ГЛЕДИЧИЯ – Рожков (Gleditsia triacanthos L.)</a></div>
+			  <div class="filterDiv Г"><a href="">ГЛОГ – Глогинка (Crataegus monogyna Jacq.)</a></div>
+			  <div class="filterDiv Г"><a href="">ГЛУХАРЧЕ – Радика (Taraxacum offcinale)</a></div>
+			  <div class="filterDiv Г"><a href="">ГОЛ СЛАДНИК – Ликвириция, сладък корен, сладунек (Glycirrhiza globra L.)</a></div>
+			  <div class="filterDiv Г"><a href="">ГОЛО ИЗСИПЛИВЧЕ – Голо белило ( Herniaria glabra L.)</a></div>
+			  <div class="filterDiv Г"><a href="">ГОЛЯМА ТЕЛЧАРКА (Polygala major Jacq. S.l.)</a></div>
+
+			  <div class="line">Д</div>
+			  <div class="filterDiv Д"><a href="">ДЕВЕСИЛ СИБИРСКИ (Heracleum sibiricum L.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДЕТЕЛИНА ЛИВАДНА – Червена детелина ( Trifolium pratence L.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДЖИНДЖИФИЛ – Исиот ( Zingiber officinale Willd L.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДИВА ТИКВА ( Bryonia alba L.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДИНКА ЛЕЧЕБНА – Кръвавка, кръвец (Sanguisorba officinalis L.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДРЕБНОЦВЕТНА ВЪРБОВКА (Epilobium parviflorum L.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДРЯН (Kornus mas L.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДЪБ ЛЕТЕН (Quercus robur L.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДЮЛЯ (Cydonia oblonga Mill.)</a></div>
+			  <div class="filterDiv Д"><a href="">ДЯВОЛСКА УСТА – Страхливче, темянка (Leonurus cardiac L.)</a></div>
+
+			  <div class="line">Е</div>
+			  <div class="filterDiv Е"><a href="">ЕВКАЛИПТ (Eucalyptus globulus Labill.)</a></div>
+			  <div class="filterDiv Е"><a href="">ЕЛЕУТЕРОКОК (Eleuterococcus senticosus)</a></div>
+			  <div class="filterDiv Е"><a href="">ЕЛША ЧЕРНА (Alnus glutinosa (L.)</a></div>
+			  <div class="filterDiv Е"><a href="">ЕНЧЕЦ ГОРСКИ – Златна пръчка ( Solidago virgaurea L.)</a></div>
+			  <div class="filterDiv Е"><a href="">ЕНЬОВЧЕ – Лепка ( Galium aparine L.)</a></div>
+			  <div class="filterDiv Е"><a href="">ЕФЕДРА ( Ephedra distachya L.)</a></div>
+			  <div class="filterDiv Е"><a href="">ЕХИНАЦЕЯ ( Echinacea)</a></div>
+
+			  <div class="line">Ж</div>
+			  <div class="filterDiv Ж"><a href="">ЖАБЛЕК ЛЕЧЕБЕН– Конски ребра, ребрика ( Galega officinalis L.)</a></div>
+			  <div class="filterDiv Ж"><a href="">ЖЕН-ШЕН ( Panax ginseng C.A. Meyer )</a></div>
+			  <div class="filterDiv Ж"><a href="">ЖИЛОВЛЕК ШИРОКОЛИСТЕН – Живовлек ( Plantago major L.)</a></div>
+			  <div class="filterDiv Ж"><a href="">ЖЪЛТ КАНТАРИОН – Лечебна звъника ( Hypericum perforatum L. )</a></div>
+			  <div class="filterDiv Ж"><a href="">ЖЪЛТ МАК – Жълта папаронка, жълт рогатец, жълта кадънка ( Glaucium flavum Grantz. )</div>
+			  <div class="filterDiv Ж"><a href="">ЖЪЛТ РАВНЕЦ – Овчарска торбичка ( Capsella bursa pastoris (L.) )</a></div>
+			  <div class="filterDiv Ж"><a href="">ЖЪЛТ СМИЛ – Безсмъртниче, каменно цвете, сухо цвете, неувяхка (Helichrysum arenarium L.)</div>
+			  <div class="filterDiv Ж"><a href="">ЖЪЛТА ТИНТЯВА – (Gentiana lutea L. )</a></div>
+			  <div class="filterDiv Ж"><a href="">ЖЪЛТА ИГЛИКА – Игличина ( Primula officinalis (L.) Hill.) )</a></div>
+			  <div class="filterDiv Ж"><a href="">ЖЪЛТУГА БАГРИЛНА – Типец, цветило (Genista tinctoria L. s. l. )</a></div>
+
+			  <div class="line">З</div>
+			  <div class="filterDiv З"><a href="">ЗАЙЧИ ЛАПАД – Змиярник, змийски лапад (Arum maculatum L. )</a></div>
+			  <div class="filterDiv З"><a href="">ЗДРАВЕЦ ОБИКНОВЕН ( Geranium macrorrhizum L. )</a></div>
+			  <div class="filterDiv З"><a href="">ЗЕЛЕ ОБИКНОВЕНО – Главесто зеле ( Brassica oleracea L. convar. capitata (L.) Alef. )</a></div>
+			  <div class="filterDiv З"><a href="">ЗИМЗЕЛЕН МАЛЪК ( Vinca minor L. )</a></div>
+			  <div class="filterDiv З"><a href="">ЗЛАТЕН ДЪЖД – Жълта акация ( Laburnum anagyroides Medic.)</a></div>
+			  <div class="filterDiv З"><a href="">ЗЛАТОВРЪХ – Златен корен( Rhodiola rosea L.)</a></div>
+			  <div class="filterDiv З"><a href="">ЗМИЙСКО МЛЯКО – Брадавично цвете ( Chelidonium majus L.)</a></div>
+			  <div class="filterDiv З"><a href="">ЗОКУМ ( Nerium oleander L.)</a></div>
+			  <div class="filterDiv З"><a href="">ЗЪРНАСТЕЦ ЕЛШОВИДЕН – Дива боя, боя-дърво, чернилка ( Frangula alnus (L.) Mill.)</a></div>
+
+			  <div class="line">И</div>
+			  <div class="filterDiv И"><a href="">ИМЕЛ БЯЛ (Viscum album L.)</a><</div>
+			  <div class="filterDiv И"><a href="">ИСЛАНДСКИ ЛИШЕЙ (Cetraria islandica L. Ach.)</a><</div>
+
+			  <div class="line">К</div>
+			  <div class="filterDiv К"><a href="">КАЛИНА ЧЕРВЕНА ( Vibirnum opulus L. )</a><</div>
+			  <div class="filterDiv К"><a href="">КАМШИК– Агримония, Охтичаво биле, пресечна трева (Agrimonia eupatoria L.)</a><</div>
+			  <div class="filterDiv К"><a href="">КАНЕЛА ( Cinnamon )</a><</div>
+			  <div class="filterDiv К"><a href="">КАСИС – Черно френско грозде (Ribes nigrum L.)</a><</div>
+			  <div class="filterDiv К"><a href="">КАФЕНО ДЪРВО (Coffea arabica L.)</a><</div>
+			  <div class="filterDiv К"><a href="">КЕРВИЗ – Целина (Apium graveolens L.)</a><</div>
+
+			  <div class="line">Л</div>
+			  <div class="filterDiv Л"><a href="">ЛАВАНДУЛА (Lavandula angustifolia Mill. )</a></div>
+			  <div class="filterDiv Л"><a href="">ЛАЗАРКИНЯ (Asperula odorata L. )</a></div>
+			  <div class="filterDiv Л"><a href="">ЛАЙКА (Matricaria recutita L. )</a></div>
+			  <div class="filterDiv Л"><a href="">ЛАТИНКА (Tropaeolum majus L. )</a></div>
+			  <div class="filterDiv Л"><a href="">ЛЕВЗЕЯ (Leuzea carthamoides D.S. )</a></div>
+			  <div class="filterDiv Л"><a href="">ЛЕВУРДА – Див чесън, мечи лук (Allium ursinum L. )</a></div>
+			  <div class="filterDiv Л"><a href="">ЛЕН КУЛТУРЕН (Linum usitatissimum L.)</a></div>
+
+			  <div class="line">М</div>
+			  <div class="filterDiv М"><a href="">МАГДАНОЗ (Petroselium crispum (Mill.) A. Hill)</a></div>
+			  <div class="filterDiv М"><a href="">МАЙЧИН ЛИСТ – Сена (Cassia acutifolia Del.)</a></div>
+			  <div class="filterDiv М"><a href="">МАК ПОЛСКИ – Див мак, кадънка (Papaver rhoeas L.)</a></div>
+			  <div class="filterDiv М"><a href="">МАЛИНА ЛИСТ (Rubus idaeus L.)</a></div>
+			  <div class="filterDiv М"><a href="">МАСЛИНА (Olea europaea L. )</a></div>
+			  <div class="filterDiv М"><a href="">МАТОЧИНА – Лимонка, лимонче, пчелно биле (Melissa oficinallis L.)</a></div>
+			  <div class="filterDiv М"><a href="">МАЩЕРКА – Бабина душица, овчарски босилек(Thymus sp. diversa)</a></div>
+			  <div class="filterDiv М"><a href="">МЕДУНИЦА – Меча пита (Pulmonaria officinalis L.)</a></div>
+			  <div class="filterDiv М"><a href="">МЕНТА – Пиперитна, лютива мента (Mentha piperita L.)</a></div>
+			  <div class="filterDiv М"><a href="">МЕТЛИЧИНА СИНЯ – Синчец (Centaurea cyanus L.)</a></div>
+			  <div class="filterDiv М"><a href="">МЕХУНКА – Червена мехунка (Physalis alkekengi L.)</a></div>
+
+			  <div class="line">Н</div>
+			  <div class="filterDiv Н"><a href="">НАР (Punica granatum L.)</a></div>
+			  <div class="filterDiv Н"><a href="">НЕВЕН – Джунджулия, крокон, месече, ружица ( Calendula officinalis L. )</a></div>
+
+			  <div class="line">О</div>
+			  <div class="filterDiv О"><a href="">ОБИКНОВЕН СПОРЕЖ – Кръстец (Senecio vulgaris L.)</a></div>
+			  <div class="filterDiv О"><a href="">ОВЕС – Посевен овес (Avena sativa L.)</a></div>
+			  <div class="filterDiv О"><a href="">ОГНИВЧЕ – Овчи очиболец, наметка (Anagallis arvensis L.)</a></div>
+			  <div class="filterDiv О"><a href="">ОРЕХ (Juglans regia L. )</a></div>
+			  <div class="filterDiv О"><a href="">ОФИКА – Калина ( Sorbus aucuparia L. )</a></div>
+			  <div class="filterDiv О"><a href="">ОЧАНКА (Euphrasia officinalis complex L.)</a></div>
+
+			  <div class="line">П</div>
+			  <div class="filterDiv П"><a href="">ПАМУК (Gossypium hirsutum L.)</a></div>
+			  <div class="filterDiv П"><a href="">ПАМУКЛИЙКА – Цистус , скална роза( Cistus incanus )</a></div>
+			  <div class="filterDiv П"><a href="">ПАРИЧКА (Bellis perennis L.)</a></div>
+			  <div class="filterDiv П"><a href="">ПАЧА ТРЕВА – Пачина, червенка (Poligonum aviculare L.s.l.)</a></div>
+			  <div class="filterDiv П"><a href="">ПАЩЪРНАК (Pastinaca sativa L.)</a></div>
+			  <div class="filterDiv П"><a href="">ПЕЛИН ДИВ – Горски черен пелин (Artemisia vulgaris L.)</a></div>
+			  <div class="filterDiv П"><a href="">ПЕЛИН ОБИКНОВЕН – Бял пелин (Artemisia absinthium L.)</a></div>
+			  <div class="filterDiv П"><a href="">ПЕРУНИКА СИНЯ – Ирис (Iris germanica L. )</a></div>
+
+			  <div class="line">Р</div>
+			  <div class="filterDiv Р"><a href="">РOМБОЛИСТЕН СПОРЕЖ (Senecio rhombifolius( Willd./Sch. Bip.))</a></div>
+			  <div class="filterDiv Р"><a href="">РАЛИЦА ОБИКНОВЕНА – Синя ралица (Delphinium consolida L. )</a></div>
+			  <div class="filterDiv Р"><a href="">РАНИЛИСТ – Хайдушка билка(Betonica officinalis L. )</a></div>
+			  <div class="filterDiv Р"><a href="">РЕВЕН – Китайски ревен ( Rheum palmatum L.)</a></div>
+			  <div class="filterDiv Р"><a href="">РЕЗЕНЕ – Морач (Foeniculum vulgare Mill.)</a></div>
+			  <div class="filterDiv Р"><a href="">РЕПЕЙ – Лопуш , лепка (Arctium lappa L..)</a></div>
+			  <div class="filterDiv Р"><a href="">РЕШЕТКА – Шереметка (Carlina acanthifolia All..)</a></div>
+			  <div class="filterDiv Р"><a href="">РОЗА – Червена казанлъшка роза, маслодайна роза (Rosa damascene auct. Non Miller)</a></div>
+			  <div class="filterDiv Р"><a href="">РОЗМАРИН – Бабин косъм (Rosmarinus officinalis L.)</a></div>
+			  <div class="filterDiv Р"><a href="">РОСЕН – Русалийче, самодивско биле (Dictamnus albus L.)</a></div>
+			  <div class="filterDiv Р"><a href="">РОСОПАС ЛЕЧЕБЕН – Горчива трева, димянка (Fumaria officinalis L.)</a></div>
+
+			  <div class="line">С</div>
+			  <div class="filterDiv С"><a href="">САЛВИЯ – Конски босилек, градински чай (Salvia officinalis L.)</a></div>
+			  <div class="filterDiv С"><a href="">САМОБАЙКА – Бабичева трева, върболиче (Glechoma hederacea L.)</a></div>
+			  <div class="filterDiv С"><a href="">САРСАПАРИЛА (Sarsaparilla (Smilax officinalis) )</a></div>
+			  <div class="filterDiv С"><a href="">СЕДЕФЧЕ – Миризлив сънчец (Ruta graveolens L.)</a></div>
+			  <div class="filterDiv С"><a href="">СИНЯ ХВОЙНА – Обикновена хвойна (Juniperus communis L. )</a></div>
+
+			  <div class="line">Т</div>
+			  <div class="filterDiv Т"><a href="">ТАТУЛ – Магарешки кестен, волче, биволче( Datura stramonium L.)</a></div>
+			  <div class="filterDiv Т"><a href="">ТЕМЕНУГА ТРИЦВЕТНА – Мушанка, шарена теменуга (Viola trikolor L. s. l.)</a></div>
+			  <div class="filterDiv Т"><a href="">ТЕРМОПСИС – Мишка, пияна трева(Thermopsis lanceolata R. Br.)</a></div>
+			  <div class="filterDiv Т"><a href="">ТЕТРА – Смрадлика, тетере (Cotinus coggygria Scop.(Rhus cotinus L.))</a></div>
+			  <div class="filterDiv Т"><a href="">ТИКВА ОБИКНОВЕНА (Cucurbita pepo L. )</a></div>
+			  <div class="filterDiv Т"><a href="">ТРЕПЕТЛИКА – Осика (Populus tremula L. )</a></div>
+			  <div class="filterDiv Т"><a href="">ТРОСКОТ – Айрък (Cynodon dactylon (L.) Pers.)</a></div>
+			  <div class="filterDiv Т"><a href="">ТРЪНКА – Синя трънка, дива слива(Prumus spinosa L.)</a></div>
+			  <div class="filterDiv Т"><a href="">ТУРТА – Тагетис (Tagetes erecta)</a></div>
+
+			  <div class="line">Х</div>
+			  <div class="filterDiv Х"><a href="">ХМЕЛ – Горец, беличе (Humulus lupulus L. )</a></div>
+			  <div class="filterDiv Х"><a href="">ХРЯН – Хрен (Armoracia rusticana P. Gaertnet )</a></div>
+
+			  <div class="line">Ц</div>
+			  <div class="filterDiv Ц"><a href="">ЦАРЕВИЧНА КОСА – Свила (Stigmata maydis )</a></div>
+			  <div class="filterDiv Ц"><a href="">ЦИКЛАМА – Обикновено ботурче, кукрек (Ciclamen hederifolium Ait. L.)</a></div>
+			  <div class="filterDiv Ц"><a href="">ЦИКОРИЯ – Синя жлъчка ( Cichorium intybus L. )</a></div>
+			  <div class="filterDiv Ц"><a href="">ЦИКУТОВО ЧАСОВНИЧЕ – Часовниче ( Erodium cicutarium (L.) L Herit )</a></div>
+			  <div class="filterDiv Ц"><a href="">ЦИСТОЗЕИРА ( Cystoseira barbata L. )</a></div>
+
+			  <div class="line">Ч</div>
+			  <div class="filterDiv Ч"><a href="">ЧАЙ КИТАЙСКИ – Руски чай (Camellia sinensis O. Kuntze( Thea sinensis L.))</a></div>
+			  <div class="filterDiv Ч"><a href="">ЧЕЛЕБИТКА ПОЛСКА – Черен кимион, нигела (Nigella sativa L.)</a></div>
+			  <div class="filterDiv Ч"><a href="">ЧЕЛЯДНИК – Бодлив челядник, главесто тръне, ехинопс (Echinops ritro L.)</a></div>
+			  <div class="filterDiv Ч"><a href="">ЧЕМЕРИКА БЯЛА – Горска чемерика (Veratrum lobelianum Bernh.)</a></div>
+			  <div class="filterDiv Ч"><a href="">ЧЕМШИР ОБИКНОВЕН (Buxus sempervirens L.)</a></div>
+			  <div class="filterDiv Ч"><a href="">ЧЕРВЕН КАНТАРИОН – Горчивка, Червена жлъчка, бабиче (Centaurium eruthraea – Erythraea centaurium Pers., Centaurium minus Moench, C. umbellatum Gilib.)</a></div>
+			  <div class="filterDiv Ч"><a href="">ЧЕРВЕН РИГАН – Обикновен риган, балкански чай, горски чай (Origanum vulgare L.)</a></div>
+			  <div class="filterDiv Ч"><a href="">ЧЕРВЕНА КАЛИНА – Снежник (Viburnum opulus L.)</a></div>
+
+			  <div class="line">Ш</div>
+			  <div class="filterDiv Ш"><a href="">ШАПИЧЕ – Горниче, цариче , длановка (Alchemilla vulgaris complex )</a></div>
+			  <div class="filterDiv Ш"><a href="">ШИБОЙ – Жълт шибой, менкеше (Cheiranthus cheiri L. )</a></div>
+			  <div class="filterDiv Ш"><a href="">ШИПКА ОБИКНОВЕНА – Див гюл(Rosa canina L. )</a></div>
+
+			  <div class="line">Я</div>
+			  <div class="filterDiv Я"><a href="">ЯПОНСКА СОФОРА – Японска акация (Sophora japonica L.)</a></div>
+
+			</div>
+	
+		
+	</div>
+
+
+
+
+
+
+
+</section>
+
+<footer class="footer">
+		<div class="container">
+			<p>WAXON <br> <br>
+			PORTFOLIO TEMPLATE </p>
+
+			<p>Brook 103, <br> <br>
+			90021 New York, USA </p>
+
+			<p>hi@waxon.com <br> <br>
+			+77 033 442 55 57</p>
+
+			<div class="contanct">
+			
+		 				<a href="#" class="fa fa-facebook"></a>
+		 			
+		 				<a href="#" class="fa fa-twitter"> </a>
+		 			
+		 				<a href="mailto:webmaster@example.com" class="fa fa-google"></a>
+		 			
+		 				<a href="tel:0894423719" class="fa fa-phone"></a>
+		 			
+			</div>
+		</div>
+</footer>
+</body>
+</html>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
